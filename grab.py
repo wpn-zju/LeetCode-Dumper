@@ -115,16 +115,16 @@ def main(domain, cookie):
 
         latest_accepted = {}
         extension = {
-                'c': 'c',
-                'cpp': 'cpp',
-                'csharp': 'cs',
-                'java': 'java',
-                'javascript': 'js',
-                'python': 'py',
-                'python3': 'py',
-                'golang': 'go',
-                'mysql': 'sql',
-                # Add more lang
+            # Add more lang
+            'c': 'c',
+            'cpp': 'cpp',
+            'csharp': 'cs',
+            'java': 'java',
+            'javascript': 'js',
+            'python': 'py',
+            'python3': 'py',
+            'golang': 'go',
+            'mysql': 'sql',
         }
         for input_problem_id in submissions:
             if input_problem_id['statusDisplay'] == 'Accepted' and input_problem_id['lang'] not in latest_accepted:
